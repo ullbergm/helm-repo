@@ -3,7 +3,7 @@ entries:
   lazylibrarian:
   - apiVersion: v1
     appVersion: 1.6.3
-    created: 2018-12-28T00:07:41.720895837-05:00
+    created: 2018-12-28T09:25:58.355988809-05:00
     description: LazyLibrarian is a program to follow authors and grab metadata for
       all your digital reading needs. It uses a combination of Goodreads Librarything
       and optionally GoogleBooks as sources for author info and book info. This container
@@ -23,7 +23,7 @@ entries:
   nzbget:
   - apiVersion: v1
     appVersion: "20"
-    created: 2018-12-28T00:07:41.721668481-05:00
+    created: 2018-12-28T09:25:58.356920906-05:00
     description: NZBGet is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.
     digest: 285ca826eabdec981767407bb1fa04af3eea759b18337f906498022ecfa885f8
@@ -41,7 +41,7 @@ entries:
   radarr:
   - apiVersion: v1
     appVersion: v0.2.0.1120
-    created: 2018-12-28T00:07:41.726544952-05:00
+    created: 2018-12-28T09:25:58.357972866-05:00
     description: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
     digest: 51434dec76a3aa7afb77a45b747c6c2960e539ddefa371e2309130d780005fe1
     home: https://radarr.video/
@@ -55,10 +55,27 @@ entries:
     urls:
     - https://ullbergm.github.io/helm-repo/radarr-1.0.0.tgz
     version: 1.0.0
+  smtp-server:
+  - apiVersion: v1
+    appVersion: "1"
+    created: 2018-12-28T09:25:58.35844606-05:00
+    description: SMTP Server that can be used as an open relay server for anything
+      inside the kubernetes environment.
+    digest: d39e1dcb8753e944500df576c77449ec0c15605a3572604eb0b217f23b7c98a2
+    home: https://github.com/ullbergm/kubernetes-postfix-relay-host/
+    maintainers:
+    - email: magnus@ullberg.us
+      name: ullbergm
+    name: smtp-server
+    sources:
+    - https://github.com/ullbergm/kubernetes-postfix-relay-host/
+    urls:
+    - https://ullbergm.github.io/helm-repo/smtp-server-1.0.0.tgz
+    version: 1.0.0
   sonarr:
   - apiVersion: v1
     appVersion: v2.0.0.5163
-    created: 2018-12-28T00:07:41.727681638-05:00
+    created: 2018-12-28T09:25:58.360158241-05:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them. It can also be configured to automatically
@@ -76,4 +93,4 @@ entries:
     urls:
     - https://ullbergm.github.io/helm-repo/sonarr-1.0.1.tgz
     version: 1.0.1
-generated: 2018-12-28T00:07:41.720240699-05:00
+generated: 2018-12-28T09:25:58.35484829-05:00

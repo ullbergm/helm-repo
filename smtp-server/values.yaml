@@ -1,0 +1,46 @@
+# Default values for smtp-server.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: ullbergm/postfix-relay-host
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+smtpRelayHost: "email-smtp.us-east-1.amazonaws.com"
+smtpRelayPort: "587"
+smtpRelayMyHostname: ""
+smtpRelayUsername: ""
+smtpRelayPassword: ""
+
+service:
+  type: ClusterIP
+  port: 25
+
+runtime:
+  puid: "911"
+  pgid: "911"
+  tz: "EST5EDT"
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #  cpu: 100m
+  #  memory: 128Mi
+  # requests:
+  #  cpu: 100m
+  #  memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
