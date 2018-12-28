@@ -3,7 +3,7 @@ entries:
   lazylibrarian:
   - apiVersion: v1
     appVersion: 1.6.3
-    created: 2018-12-28T09:25:58.355988809-05:00
+    created: 2018-12-28T00:07:41.720895837-05:00
     description: LazyLibrarian is a program to follow authors and grab metadata for
       all your digital reading needs. It uses a combination of Goodreads Librarything
       and optionally GoogleBooks as sources for author info and book info. This container
