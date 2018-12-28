@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "lazylibrarian.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "lazylibrarian.name" . }}
+    helm.sh/chart: {{ include "lazylibrarian.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: {{ include "lazylibrarian.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}

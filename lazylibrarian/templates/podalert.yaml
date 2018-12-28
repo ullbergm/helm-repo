@@ -1,0 +1,17 @@
+apiVersion: monitoring.appscode.com/v1alpha1
+kind: PodAlert
+metadata:
+  name: {{ include "lazylibrarian.fullname" . }}-pod-status
+  labels:
+    app.kubernetes.io/name: {{ include "lazylibrarian.name" . }}
+    helm.sh/chart: {{ include "lazylibrarian.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "lazylibrarian.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  check: pod-status
+  checkInterval: 30s
+  alertInterval: 2m
