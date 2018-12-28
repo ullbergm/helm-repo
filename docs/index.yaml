@@ -75,5 +75,5 @@ entries:
     - https://github.com/Sonarr/Sonarr
     urls:
     - https://ullbergm.github.io/helm-repo/sonarr-1.0.1.tgz
-    version: 1.0.1
+    version: 1.0.0
 generated: 2018-12-27T23:26:31.512056104-05:00
