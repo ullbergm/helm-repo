@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  nzbget:
+  - apiVersion: v1
+    appVersion: "20"
+    created: 2018-12-27T22:20:25.980919676-05:00
+    description: NZBGet is a usenet downloader, written in C++ and designed with performance
+      in mind to achieve maximum download speed by using very little system resources.
+    digest: 285ca826eabdec981767407bb1fa04af3eea759b18337f906498022ecfa885f8
+    home: https://nzbget.net/
+    icon: https://raw.githubusercontent.com/nzbget/nzbget/develop/webui/img/favicon-256x256.png
+    maintainers:
+    - email: magnus@ullberg.us
+      name: ullbergm
+    name: nzbget
+    sources:
+    - https://github.com/nzbget/nzbget
+    urls:
+    - https://ullbergm.github.io/helm-repo/nzbget-1.0.0.tgz
+    version: 1.0.0
+generated: 2018-12-27T22:20:25.979725361-05:00
