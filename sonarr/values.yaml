@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: linuxserver/sonarr
-  tag: 154
+  tag: 169
   pullPolicy: IfNotPresent
 
 nameOverride: ""
