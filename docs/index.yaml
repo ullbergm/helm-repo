@@ -3,7 +3,7 @@ entries:
   nzbget:
   - apiVersion: v1
     appVersion: "20"
-    created: 2018-12-27T23:11:25.2841957-05:00
+    created: 2018-12-27T23:26:31.516211463-05:00
     description: NZBGet is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.
     digest: 285ca826eabdec981767407bb1fa04af3eea759b18337f906498022ecfa885f8
@@ -18,10 +18,27 @@ entries:
     urls:
     - https://ullbergm.github.io/helm-repo/nzbget-1.0.0.tgz
     version: 1.0.0
+  radarr:
+  - apiVersion: v1
+    appVersion: v0.2.0.1120
+    created: 2018-12-27T23:26:31.516875448-05:00
+    description: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
+    digest: 51434dec76a3aa7afb77a45b747c6c2960e539ddefa371e2309130d780005fe1
+    home: https://radarr.video/
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/256.png
+    maintainers:
+    - email: magnus@ullberg.us
+      name: ullbergm
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    urls:
+    - https://ullbergm.github.io/helm-repo/radarr-1.0.0.tgz
+    version: 1.0.0
   sonarr:
   - apiVersion: v1
     appVersion: v2.0.0.5163
-    created: 2018-12-27T23:11:25.284652667-05:00
+    created: 2018-12-27T23:26:31.517672169-05:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them. It can also be configured to automatically
@@ -39,4 +56,4 @@ entries:
     urls:
     - https://ullbergm.github.io/helm-repo/sonarr-1.0.0.tgz
     version: 1.0.0
-generated: 2018-12-27T23:11:25.283163064-05:00
+generated: 2018-12-27T23:26:31.512056104-05:00
