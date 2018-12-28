@@ -3,7 +3,7 @@ entries:
   nzbget:
   - apiVersion: v1
     appVersion: "20"
-    created: 2018-12-27T23:26:31.516211463-05:00
+    created: 2018-12-27T23:32:44.090729497-05:00
     description: NZBGet is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.
     digest: 285ca826eabdec981767407bb1fa04af3eea759b18337f906498022ecfa885f8
@@ -21,7 +21,7 @@ entries:
   radarr:
   - apiVersion: v1
     appVersion: v0.2.0.1120
-    created: 2018-12-27T23:26:31.516875448-05:00
+    created: 2018-12-27T23:32:44.091549393-05:00
     description: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
     digest: 51434dec76a3aa7afb77a45b747c6c2960e539ddefa371e2309130d780005fe1
     home: https://radarr.video/
@@ -38,13 +38,13 @@ entries:
   sonarr:
   - apiVersion: v1
     appVersion: v2.0.0.5163
-    created: 2018-12-27T23:26:31.517672169-05:00
+    created: 2018-12-27T23:32:44.092107497-05:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them. It can also be configured to automatically
       upgrade the quality of files already downloaded when a better quality format
       becomes available.
-    digest: ff879f0b1f4511a0ec146a1b4ce29e1078ed276fa105fd42313e6d323dc5af29
+    digest: 26cfbb9726cce0fcd17084634d1ea8ea9037a3b71694b207ffbe507763f8c4a3
     home: https://sonarr.tv/
     icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/256.png
     maintainers:
@@ -54,6 +54,6 @@ entries:
     sources:
     - https://github.com/Sonarr/Sonarr
     urls:
-    - https://ullbergm.github.io/helm-repo/sonarr-1.0.0.tgz
-    version: 1.0.0
-generated: 2018-12-27T23:26:31.512056104-05:00
+    - https://ullbergm.github.io/helm-repo/sonarr-1.0.1.tgz
+    version: 1.0.1
+generated: 2018-12-27T23:32:44.089979108-05:00
