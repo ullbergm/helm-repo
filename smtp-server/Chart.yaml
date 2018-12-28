@@ -1,8 +1,8 @@
 apiVersion: v1
 description: SMTP Server that can be used as an open relay server for anything inside the kubernetes environment.
 name: smtp-server
-version: 1.0.0
-appVersion: 1
+version: 1.0.1
+appVersion: latest
 home: https://github.com/ullbergm/kubernetes-postfix-relay-host/
 sources:
 - https://github.com/ullbergm/kubernetes-postfix-relay-host/

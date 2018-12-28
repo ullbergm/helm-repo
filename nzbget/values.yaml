@@ -6,8 +6,8 @@ replicaCount: 1
 
 image:
   repository: linuxserver/nzbget
-  tag: 154
-  pullPolicy: IfNotPresent
+  tag: latest
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
@@ -75,3 +75,11 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+keel:
+  policy: force
+  trigger: poll
+  pollSchedule: "@every 1h"
+  images:
+    - repository: image.repository
+      tag: image.tag
