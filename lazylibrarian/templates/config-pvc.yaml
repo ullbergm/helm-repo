@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "lazylibrarian.fullname" . }}-config
+  labels:
+    app.kubernetes.io/name: {{ include "lazylibrarian.name" . }}
+    helm.sh/chart: {{ include "lazylibrarian.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  storageClassName: "{{ .Values.storage.config.storageClassName }}"
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.storage.config.size }}

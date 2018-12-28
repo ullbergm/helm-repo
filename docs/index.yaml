@@ -1,5 +1,25 @@
 apiVersion: v1
 entries:
+  lazylibrarian:
+  - apiVersion: v1
+    appVersion: 1.6.3
+    created: 2018-12-28T00:07:41.720895837-05:00
+    description: LazyLibrarian is a program to follow authors and grab metadata for
+      all your digital reading needs. It uses a combination of Goodreads Librarything
+      and optionally GoogleBooks as sources for author info and book info. This container
+      is based on the DobyTang fork.
+    digest: 6f301fbbee6c328cfa66033d8082c8004aee7ec6cf3a232672d8b8bb295b0444
+    home: https://gitlab.com/LazyLibrarian/LazyLibrarian
+    icon: https://gitlab.com/LazyLibrarian/LazyLibrarian/raw/master/data/images/ll256.png
+    maintainers:
+    - email: magnus@ullberg.us
+      name: ullbergm
+    name: lazylibrarian
+    sources:
+    - https://gitlab.com/LazyLibrarian/LazyLibrarian
+    urls:
+    - https://ullbergm.github.io/helm-repo/lazylibrarian-1.0.0.tgz
+    version: 1.0.0
   nzbget:
   - apiVersion: v1
     appVersion: "20"
