@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   lazylibrarian:
   - apiVersion: v1
-    appVersion: 1.6.3
-    created: 2018-12-28T09:25:58.355988809-05:00
+    appVersion: latest
+    created: 2018-12-28T15:01:49.537071567-05:00
     description: LazyLibrarian is a program to follow authors and grab metadata for
       all your digital reading needs. It uses a combination of Goodreads Librarything
       and optionally GoogleBooks as sources for author info and book info. This container
       is based on the DobyTang fork.
-    digest: 6f301fbbee6c328cfa66033d8082c8004aee7ec6cf3a232672d8b8bb295b0444
+    digest: f50bcbd1bc6d5c27339393a0d4cfcd22ac609540c396c2b999d0fe713869a74a
     home: https://gitlab.com/LazyLibrarian/LazyLibrarian
     icon: https://gitlab.com/LazyLibrarian/LazyLibrarian/raw/master/data/images/ll256.png
     maintainers:
@@ -18,15 +18,15 @@ entries:
     sources:
     - https://gitlab.com/LazyLibrarian/LazyLibrarian
     urls:
-    - https://ullbergm.github.io/helm-repo/lazylibrarian-1.0.0.tgz
-    version: 1.0.0
+    - https://ullbergm.github.io/helm-repo/lazylibrarian-1.0.1.tgz
+    version: 1.0.1
   nzbget:
   - apiVersion: v1
-    appVersion: "20"
-    created: 2018-12-28T09:25:58.356920906-05:00
+    appVersion: latest
+    created: 2018-12-28T15:01:49.537653704-05:00
     description: NZBGet is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.
-    digest: 285ca826eabdec981767407bb1fa04af3eea759b18337f906498022ecfa885f8
+    digest: b347a6b9ba47b6cd9b98b7b1b73714a3cb47b85fd5616d2122b62fad2fadee10
     home: https://nzbget.net/
     icon: https://raw.githubusercontent.com/nzbget/nzbget/develop/webui/img/favicon-256x256.png
     maintainers:
@@ -36,14 +36,14 @@ entries:
     sources:
     - https://github.com/nzbget/nzbget
     urls:
-    - https://ullbergm.github.io/helm-repo/nzbget-1.0.0.tgz
-    version: 1.0.0
+    - https://ullbergm.github.io/helm-repo/nzbget-1.0.1.tgz
+    version: 1.0.1
   radarr:
   - apiVersion: v1
-    appVersion: v0.2.0.1120
-    created: 2018-12-28T09:25:58.357972866-05:00
+    appVersion: latest
+    created: 2018-12-28T15:01:49.538313646-05:00
     description: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
-    digest: 51434dec76a3aa7afb77a45b747c6c2960e539ddefa371e2309130d780005fe1
+    digest: 0b0f581a2e5374313588ed7dcd3d06a024be799e2a21ca1cdf3fd12952e038ed
     home: https://radarr.video/
     icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/256.png
     maintainers:
@@ -53,15 +53,15 @@ entries:
     sources:
     - https://github.com/Radarr/Radarr
     urls:
-    - https://ullbergm.github.io/helm-repo/radarr-1.0.0.tgz
-    version: 1.0.0
+    - https://ullbergm.github.io/helm-repo/radarr-1.0.1.tgz
+    version: 1.0.1
   smtp-server:
   - apiVersion: v1
-    appVersion: "1"
-    created: 2018-12-28T09:25:58.35844606-05:00
+    appVersion: latest
+    created: 2018-12-28T15:01:49.539018187-05:00
     description: SMTP Server that can be used as an open relay server for anything
       inside the kubernetes environment.
-    digest: d39e1dcb8753e944500df576c77449ec0c15605a3572604eb0b217f23b7c98a2
+    digest: f7caa3a1e81a29cb1f95adb137ba2540d4cdb285ab24a6a17b5d99e1a041c0b9
     home: https://github.com/ullbergm/kubernetes-postfix-relay-host/
     maintainers:
     - email: magnus@ullberg.us
@@ -70,18 +70,18 @@ entries:
     sources:
     - https://github.com/ullbergm/kubernetes-postfix-relay-host/
     urls:
-    - https://ullbergm.github.io/helm-repo/smtp-server-1.0.0.tgz
-    version: 1.0.0
+    - https://ullbergm.github.io/helm-repo/smtp-server-1.0.1.tgz
+    version: 1.0.1
   sonarr:
   - apiVersion: v1
-    appVersion: v2.0.0.5163
-    created: 2018-12-28T09:25:58.360158241-05:00
+    appVersion: latest
+    created: 2018-12-28T15:01:49.539506615-05:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them. It can also be configured to automatically
       upgrade the quality of files already downloaded when a better quality format
       becomes available.
-    digest: 314ef9f63b85f3d1aab64c22e96c5255329a7c6c5333397bd667b9b9e7d51c96
+    digest: bf3acac3d63476085d29feb8f34ad8605c6696e84424c4ec2a3cc8f5632055d7
     home: https://sonarr.tv/
     icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/256.png
     maintainers:
@@ -91,6 +91,6 @@ entries:
     sources:
     - https://github.com/Sonarr/Sonarr
     urls:
-    - https://ullbergm.github.io/helm-repo/sonarr-1.0.1.tgz
-    version: 1.0.1
-generated: 2018-12-28T09:25:58.35484829-05:00
+    - https://ullbergm.github.io/helm-repo/sonarr-1.0.2.tgz
+    version: 1.0.2
+generated: 2018-12-28T15:01:49.536211713-05:00

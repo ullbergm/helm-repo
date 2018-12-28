@@ -8,6 +8,6 @@ metadata:
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 data:
-  smtpRelayHost: {{ .Values.smtpRelayHost | b64enc }}
-  smtpRelayMyHostname: {{ .Values.smtpRelayMyHostname | b64enc }}
-  smtpRelayUsername: {{ .Values.smtpRelayUsername | b64enc }}
+  smtpRelayHost: {{ .Values.smtpRelayHost | quote }}
+  smtpRelayMyHostname: {{ .Values.smtpRelayMyHostname }}
+  smtpRelayUsername: {{ .Values.smtpRelayUsername }}

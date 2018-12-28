@@ -6,8 +6,8 @@ replicaCount: 1
 
 image:
   repository: linuxserver/lazylibrarian
-  tag: amd64-31f22d36-ls20
-  pullPolicy: IfNotPresent
+  tag: latest
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
@@ -75,3 +75,11 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+keel:
+  policy: force
+  trigger: poll
+  pollSchedule: "@every 1h"
+  images:
+    - repository: image.repository
+      tag: image.tag

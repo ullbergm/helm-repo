@@ -20,6 +20,8 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "nzbget.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
+      annotations:
+        date/deploy-date: {{ now | quote }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
