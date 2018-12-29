@@ -1,9 +1,28 @@
 apiVersion: v1
 entries:
+  hydra2:
+  - apiVersion: v1
+    appVersion: latest
+    created: 2018-12-29T17:38:15.684729297-05:00
+    description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
+      to a number of raw and newznab based indexers. You can search all your indexers
+      from one place and use it as an indexer source for tools like Sonarr, Radarr
+      or CouchPotato.
+    digest: d354ca4148d4ec1f4c2aef8acd270020cb6c30eb148f0f87bf2b4ff8a455de13
+    home: https://github.com/theotherp/nzbhydra2
+    maintainers:
+    - email: magnus@ullberg.us
+      name: ullbergm
+    name: hydra2
+    sources:
+    - https://github.com/theotherp/nzbhydra2
+    urls:
+    - https://ullbergm.github.io/helm-repo/hydra2-1.0.0.tgz
+    version: 1.0.0
   lazylibrarian:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-28T15:01:49.537071567-05:00
+    created: 2018-12-29T17:38:15.685197984-05:00
     description: LazyLibrarian is a program to follow authors and grab metadata for
       all your digital reading needs. It uses a combination of Goodreads Librarything
       and optionally GoogleBooks as sources for author info and book info. This container
@@ -23,7 +42,7 @@ entries:
   nzbget:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-28T15:01:49.537653704-05:00
+    created: 2018-12-29T17:38:15.685592732-05:00
     description: NZBGet is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.
     digest: b347a6b9ba47b6cd9b98b7b1b73714a3cb47b85fd5616d2122b62fad2fadee10
@@ -41,7 +60,7 @@ entries:
   radarr:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-28T15:01:49.538313646-05:00
+    created: 2018-12-29T17:38:15.686128202-05:00
     description: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
     digest: 0b0f581a2e5374313588ed7dcd3d06a024be799e2a21ca1cdf3fd12952e038ed
     home: https://radarr.video/
@@ -58,7 +77,7 @@ entries:
   smtp-server:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-28T15:01:49.539018187-05:00
+    created: 2018-12-29T17:38:15.686464158-05:00
     description: SMTP Server that can be used as an open relay server for anything
       inside the kubernetes environment.
     digest: f7caa3a1e81a29cb1f95adb137ba2540d4cdb285ab24a6a17b5d99e1a041c0b9
@@ -75,7 +94,7 @@ entries:
   sonarr:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-28T15:01:49.539506615-05:00
+    created: 2018-12-29T17:38:15.686875776-05:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them. It can also be configured to automatically
@@ -93,4 +112,4 @@ entries:
     urls:
     - https://ullbergm.github.io/helm-repo/sonarr-1.0.2.tgz
     version: 1.0.2
-generated: 2018-12-28T15:01:49.536211713-05:00
+generated: 2018-12-29T17:38:15.683781402-05:00

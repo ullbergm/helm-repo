@@ -1,0 +1,50 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hydra2-secret
+  labels:
+    app.kubernetes.io/name: {{ include "hydra2.name" . }}
+    helm.sh/chart: {{ include "hydra2.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+data:
+  AWS_ACCESS_KEY_ID: "{{ .Values.backup.s3.access_key_id | b64enc }}"
+  AWS_SECRET_ACCESS_KEY: "{{ .Values.backup.s3.secret_access_key | b64enc }}"
+  RESTIC_PASSWORD: "{{ .Values.backup.password | b64enc }}"
+---
+apiVersion: stash.appscode.com/v1alpha1
+kind: Restic
+metadata:
+  name: {{ include "hydra2.fullname" . }}-backup
+  labels:
+    app.kubernetes.io/name: {{ include "hydra2.name" . }}
+    helm.sh/chart: {{ include "hydra2.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  backend:
+    s3:
+      bucket: {{ .Values.backup.s3.bucket }}
+      endpoint: {{ .Values.backup.s3.endpoint }}
+      prefix: {{ .Values.backup.s3.prefix }}
+    storageSecretName: hydra2-secret
+  fileGroups:
+    - path: /config
+      retentionPolicyName: default
+  retentionPolicies:
+    - keepLast: 4
+      keepHourly: 24
+      keepDaily: 7
+      keepWeekly: 4
+      keepMonthly: 6
+      name: default
+      prune: true
+  schedule: '@every 15m'
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "hydra2.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  volumeMounts:
+    - mountPath: /config
+      name: config
