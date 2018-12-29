@@ -64,14 +64,12 @@ spec:
           persistentVolumeClaim:
             claimName: {{ include "sonarr.fullname" . }}-config
         - name: media
-          path: /data/media
           nfs:
             server: "{{ .Values.storage.media.server }}"
             path: "{{ .Values.storage.media.path }}"
         - name: downloads
-          path: /data/media
           nfs:
-            server: "{{ .Values.storage.media.server }}"
+            server: "{{ .Values.storage.downloads.server }}"
             path: "{{ .Values.storage.downloads.path }}"
       {{- with .Values.nodeSelector }}
       nodeSelector:
