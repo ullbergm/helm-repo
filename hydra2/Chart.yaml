@@ -1,0 +1,11 @@
+apiVersion: v1
+description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access to a number of raw and newznab based indexers. You can search all your indexers from one place and use it as an indexer source for tools like Sonarr, Radarr or CouchPotato.
+name: hydra2
+version: 1.0.0
+appVersion: latest
+home: https://github.com/theotherp/nzbhydra2
+sources:
+  - https://github.com/theotherp/nzbhydra2
+maintainers:
+- name: ullbergm
+  email: magnus@ullberg.us
