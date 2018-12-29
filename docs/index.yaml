@@ -3,7 +3,7 @@ entries:
   hydra2:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.919462948-05:00
+    created: 2018-12-29T18:26:46.127180332-05:00
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -22,12 +22,12 @@ entries:
   lazylibrarian:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.920180837-05:00
+    created: 2018-12-29T18:26:46.128221005-05:00
     description: LazyLibrarian is a program to follow authors and grab metadata for
       all your digital reading needs. It uses a combination of Goodreads Librarything
       and optionally GoogleBooks as sources for author info and book info. This container
       is based on the DobyTang fork.
-    digest: f50bcbd1bc6d5c27339393a0d4cfcd22ac609540c396c2b999d0fe713869a74a
+    digest: f276e2fc2a4238a51ed52e7318eb0003fa3398645ac443ff304aaedd73c363b6
     home: https://gitlab.com/LazyLibrarian/LazyLibrarian
     icon: https://gitlab.com/LazyLibrarian/LazyLibrarian/raw/master/data/images/ll256.png
     maintainers:
@@ -37,30 +37,30 @@ entries:
     sources:
     - https://gitlab.com/LazyLibrarian/LazyLibrarian
     urls:
-    - https://ullbergm.github.io/helm-repo/lazylibrarian-1.0.1.tgz
-    version: 1.0.1
+    - https://ullbergm.github.io/helm-repo/lazylibrarian-1.0.2.tgz
+    version: 1.0.2
   lidarr:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.920791777-05:00
+    created: 2018-12-29T18:26:46.129073889-05:00
     description: Lidarr - Lidarr is a music collection manager for Usenet and BitTorrent
       users.
-    digest: 51c527dd5f6b09eac89a6e126076ee0ac4596ca8063a2e3ae8291687a6cfe504
+    digest: 76fdd0fb13d53b71a338e7d71d1d3bd6f688c206485d73ae049198b32505e3c6
     home: https://lidarr.audio/
     maintainers:
     - email: magnus@ullberg.us
       name: ullbergm
     name: lidarr
     urls:
-    - https://ullbergm.github.io/helm-repo/lidarr-1.0.0.tgz
-    version: 1.0.0
+    - https://ullbergm.github.io/helm-repo/lidarr-1.0.1.tgz
+    version: 1.0.1
   nzbget:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.921530073-05:00
+    created: 2018-12-29T18:26:46.130174777-05:00
     description: NZBGet is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.
-    digest: b347a6b9ba47b6cd9b98b7b1b73714a3cb47b85fd5616d2122b62fad2fadee10
+    digest: fd0e35652fd7c639d82c97427a5ea38736242edbf501d68fcf494ad6816dd962
     home: https://nzbget.net/
     icon: https://raw.githubusercontent.com/nzbget/nzbget/develop/webui/img/favicon-256x256.png
     maintainers:
@@ -70,14 +70,14 @@ entries:
     sources:
     - https://github.com/nzbget/nzbget
     urls:
-    - https://ullbergm.github.io/helm-repo/nzbget-1.0.1.tgz
-    version: 1.0.1
+    - https://ullbergm.github.io/helm-repo/nzbget-1.0.2.tgz
+    version: 1.0.2
   radarr:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.922233817-05:00
+    created: 2018-12-29T18:26:46.130987599-05:00
     description: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
-    digest: 0b0f581a2e5374313588ed7dcd3d06a024be799e2a21ca1cdf3fd12952e038ed
+    digest: 9d5b885cf3ae42ac0bd61a8a4a194e44190ed8737a57e4e1fe278a49502c3059
     home: https://radarr.video/
     icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/256.png
     maintainers:
@@ -87,12 +87,12 @@ entries:
     sources:
     - https://github.com/Radarr/Radarr
     urls:
-    - https://ullbergm.github.io/helm-repo/radarr-1.0.1.tgz
-    version: 1.0.1
+    - https://ullbergm.github.io/helm-repo/radarr-1.0.2.tgz
+    version: 1.0.2
   smtp-server:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.923397514-05:00
+    created: 2018-12-29T18:26:46.131618502-05:00
     description: SMTP Server that can be used as an open relay server for anything
       inside the kubernetes environment.
     digest: f7caa3a1e81a29cb1f95adb137ba2540d4cdb285ab24a6a17b5d99e1a041c0b9
@@ -109,13 +109,13 @@ entries:
   sonarr:
   - apiVersion: v1
     appVersion: latest
-    created: 2018-12-29T17:51:39.924127412-05:00
+    created: 2018-12-29T18:26:46.132352028-05:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them. It can also be configured to automatically
       upgrade the quality of files already downloaded when a better quality format
       becomes available.
-    digest: bf3acac3d63476085d29feb8f34ad8605c6696e84424c4ec2a3cc8f5632055d7
+    digest: 74e85a0a7477a1d83c6279f6abc670f028f1f40e7b55f8494a8b7f2cd1d0e81c
     home: https://sonarr.tv/
     icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/256.png
     maintainers:
@@ -125,6 +125,6 @@ entries:
     sources:
     - https://github.com/Sonarr/Sonarr
     urls:
-    - https://ullbergm.github.io/helm-repo/sonarr-1.0.2.tgz
-    version: 1.0.2
-generated: 2018-12-29T17:51:39.917666975-05:00
+    - https://ullbergm.github.io/helm-repo/sonarr-1.0.3.tgz
+    version: 1.0.3
+generated: 2018-12-29T18:26:46.125653408-05:00
